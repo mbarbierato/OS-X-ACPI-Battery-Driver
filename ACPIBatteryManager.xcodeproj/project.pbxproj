@@ -165,6 +165,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 0C4B237114598AD10080D960;
@@ -249,7 +250,7 @@
 				MODULE_VERSION = 1.90.1;
 				OTHER_CFLAGS = "-fno-stack-protector";
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				STRIP_STYLE = "non-global";
 				SYMROOT = build/Products;
 			};
@@ -279,7 +280,7 @@
 				MODULE_VERSION = 1.90.1;
 				OTHER_CFLAGS = "-fno-stack-protector";
 				"OTHER_LDFLAGS[arch=x86_64]" = "-dead_strip";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				STRIP_STYLE = "non-global";
 				SYMROOT = build/Products;
 			};
@@ -292,6 +293,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppleSmartBatteryManager/ACPIBatteryManager-Prefix.pch";
 				INFOPLIST_FILE = "AppleSmartBatteryManager/ACPIBatteryManager-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULE_NAME = org.rehabman.driver.AppleSmartBatteryManager;
 				PRODUCT_NAME = ACPIBatteryManager;
 			};
@@ -304,6 +306,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppleSmartBatteryManager/ACPIBatteryManager-Prefix.pch";
 				INFOPLIST_FILE = "AppleSmartBatteryManager/ACPIBatteryManager-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULE_NAME = org.rehabman.driver.AppleSmartBatteryManager;
 				PRODUCT_NAME = ACPIBatteryManager;
 			};
