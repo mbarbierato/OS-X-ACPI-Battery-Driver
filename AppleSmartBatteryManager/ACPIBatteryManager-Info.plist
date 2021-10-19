@@ -2,14 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Source Code</key>
-	<string>https://github.com/RehabMan/OS-X-ACPI-Battery-Driver</string>
-	<key>CFBundleGetInfoString</key>
-	<string>${MODULE_VERSION}, Copyright 2011 Apple Inc., RehabMan 2012</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string>${MODULE_VERSION}, Copyright 2011 Apple Inc., RehabMan 2012</string>
 	<key>CFBundleIdentifier</key>
 	<string>${MODULE_NAME}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -19,63 +17,63 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>${MODULE_VERSION}</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>${MODULE_VERSION}</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>ACPI Battery Manager</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>${MODULE_NAME}</string>
-			<key>IOClass</key>
-			<string>AppleSmartBatteryManager</string>
-			<key>IONameMatch</key>
-			<string>PNP0C0A</string>
-			<key>IOProviderClass</key>
-			<string>IOACPIPlatformDevice</string>
-			<key>IOProbeScore</key>
-			<integer>1000</integer>
-			<key>Configuration</key>
-			<dict>
-				<key>UseExtendedBatteryInformationMethod</key>
-				<true/>
-				<key>UseExtraBatteryInformationMethod</key>
-				<true/>
-				<key>EstimateCycleCountDivisor</key>
-				<integer>6</integer>
-				<key>UseDesignVoltageForDesignCapacity</key>
-				<true/>
-				<key>UseDesignVoltageForMaxCapacity</key>
-				<true/>
-				<key>UseDesignVoltageForCurrentCapacity</key>
-				<true/>
-				<key>CurrentDischargeRateMax</key>
-				<integer>20000</integer>
-				<key>CorrectCorruptCapacities</key>
-				<true/>
-				<key>Correct16bitSignedCurrentRate</key>
-				<true/>
-				<key>StartupDelay</key>
-				<integer>0</integer>
-				<key>FirstPollDelay</key>
-				<integer>4000</integer>
-			</dict>
-		</dict>
 		<key>ACPI AC Adapter</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>${MODULE_NAME}</string>
 			<key>IOClass</key>
 			<string>ACPIACAdapter</string>
-			<key>IOProviderClass</key>
-			<string>IOACPIPlatformDevice</string>
 			<key>IONameMatch</key>
 			<string>ACPI0003</string>
 			<key>IOProbeScore</key>
 			<integer>1000</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+		</dict>
+		<key>ACPI Battery Manager</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>${MODULE_NAME}</string>
+			<key>Configuration</key>
+			<dict>
+				<key>Correct16bitSignedCurrentRate</key>
+				<true/>
+				<key>CorrectCorruptCapacities</key>
+				<true/>
+				<key>CurrentDischargeRateMax</key>
+				<integer>20000</integer>
+				<key>EstimateCycleCountDivisor</key>
+				<integer>6</integer>
+				<key>FirstPollDelay</key>
+				<integer>4000</integer>
+				<key>StartupDelay</key>
+				<integer>0</integer>
+				<key>UseDesignVoltageForCurrentCapacity</key>
+				<true/>
+				<key>UseDesignVoltageForDesignCapacity</key>
+				<true/>
+				<key>UseDesignVoltageForMaxCapacity</key>
+				<true/>
+				<key>UseExtendedBatteryInformationMethod</key>
+				<true/>
+				<key>UseExtraBatteryInformationMethod</key>
+				<true/>
+			</dict>
+			<key>IOClass</key>
+			<string>AppleSmartBatteryManager</string>
+			<key>IONameMatch</key>
+			<string>PNP0C0A</string>
+			<key>IOProbeScore</key>
+			<integer>1000</integer>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
@@ -91,5 +89,7 @@
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Root</string>
+	<key>Source Code</key>
+	<string>https://github.com/RehabMan/OS-X-ACPI-Battery-Driver</string>
 </dict>
 </plist>

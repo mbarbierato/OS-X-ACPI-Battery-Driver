@@ -22,7 +22,7 @@ https://code.google.com/p/os-x-acpi-battery-driver/downloads/list
 
 ### Build Environment
 
-My build environment is currently Xcode 7.3, using SDK 10.8, targeting OS X 10.6.
+My build environment is currently Xcode 12.5.1, using SDK 10.13, targeting OS X 10.13.
 
 No other build environment is supported.
 
