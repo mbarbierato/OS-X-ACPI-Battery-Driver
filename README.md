@@ -77,6 +77,9 @@ http://www.tonymacx86.com/hp-probook/69472-battery-manager-fix-boot-without-batt
 
 
 ### Change Log:
+2021-10-19 v1.90.2
+
+- Build with 10.13 sdk
 
 2018-10-5 v1.90.1
 
